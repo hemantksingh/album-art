@@ -1,25 +1,22 @@
-function HomePage() {
-const ctaStyles = {
-    display: 'flex',
-    justifyContent: 'space-around'
-}
+import styles from './HomePage.module.scss'
 
+function HomePage() {
     return (
-        <div style={ctaStyles}>
+        <div className={styles.cta}>
             <span>
                 Sample Image 1
             </span>
             <span>
                 Sample Image 2
             </span>
-            <div>
-                <div>
+            <div className={styles.ctaText}>
+                <div className={styles.ctaMainText}>
                     Your <em>Album</em> and <em>Artist</em> Name
                 </div>
-                <div>
+                <div className={styles.ctaSubText}>
                      <div>on <em>Custom</em> Album Design</div>
                 </div>
-                <button>Shop Now</button>
+                <button class="cta">Shop Now</button>
             </div>
             <span>
                 Sample Image 3
